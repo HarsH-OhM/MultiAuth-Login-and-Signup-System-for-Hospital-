@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <style>
+      
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+ 
+body, html {
+  
+  background-image: url("bg2.jpg");
+ 
+ background-position: center center;
+ height: 100%;
+
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+    height: 100vh;
+  
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    /* background-size: 100% 100%; */
+
+  font-family: 'Open Sans', sans-serif;
+  
+   
+}
+
+
+.login {
+  width: 450px;
+  height: 100%;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #02cc9f;
+}
+
+.login-header {
+  background:#02cc9f;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  /* text-transform: uppercase; */
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.about {
+  box-sizing: border-box;
+  display: block;
+  border-color: #bbb;
+  background: #ebebeb; 
+  color:black;
+  font-family: inherit;
+  font-size: 0.95em;
+  height: 200px;
+
+}
+
+
+
+.navbar-header{
+    color:#02cc9f;
+    display: inline-block;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#02cc9f;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+   position: absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#02cc9f;
+   font-weight: bold;
+    
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+.page-footer{
+      
+      overflow: hidden;
+      position:absolute;
+      
+      right:0;
+      left:0;
+      bottom:0;
+     
+    background-color: #02cc9f;
+  }
+ 
+ 
+ 
+
+    </style> 
+</head>
+<body>
+    <div class="topnav">
+        <a  href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="active" href="about.html">About Us</a>
+      </div>
+
+    <div class="login">
+        <div class="login-triangle"></div>
+        
+        <h2 class="login-header">About Us</h2>
+      
+        <div class="about">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores nesciunt vitae, enim, voluptate, similique nam praesentium dolore qui sint aspernatur consequuntur voluptas cum? Explicabo illum animi dignissimos? Voluptatem, quis.</p>
+            </div>
+
+            
+
+       
+    </div>
+<!-- 
+      <div class="footer">
+      <footer class="footer">
+        <p style="text-align: center;">Copyright &copy;2020</p>
+      </footer>
+      </div> -->
+      <!-- Footer -->
+      <footer class="page-footer font-small blue">
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+    
+
+    
+</body>
+</html>
