@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <style>
+    
+
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+body, html {
+ 
+
+
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  
+   
+}
+.bg{
+     
+  background-image: url("bg2.jpg");
+ 
+ background-position: center center;
+ height: 100%;
+
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.login {
+  width: 450px;
+  margin: 16px auto;
+  font-size: 16px;
+  
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #02cc9f;
+}
+
+.login-header {
+  background: #02cc9f;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  /* text-transform: uppercase; */
+  text-align: center;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="text"],
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background:#02cc9f;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #02cc9f;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color:#02cc9f;
+}
+
+
+.navbar-header{
+    color:#02cc9f;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#02cc9f;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+   position: relative;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#02cc9f;
+  
+    
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+.page-footer{
+      
+      overflow: hidden;
+      position:absolute;
+      
+      right:0;
+      left:0;
+      bottom:0;
+     
+    background-color: #02cc9f;
+  }
+ 
+ 
+
+    </style>
+    
+</head>
+<body>
+
+
+    <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+      </div>
+
+ <div class="bg">
+
+
+    <div class="login">
+        <div class="login-triangle"></div>
+        
+        <h2 class="login-header">Create Account<br>As a Doctor</h2>
+        
+      
+        <form class="login-container" method="POST" action="registration.php">
+          <p><input type="text" placeholder="Name" name="username" required></p>
+          <p><input type="email" placeholder="Email" name="email" required></p>
+          <p><input type="password" placeholder="Passwod" name="password" required></p>
+           <p><input type="password" placeholder="Confirm Password" name="confirm_password" required></p> 
+          <p style="text-align:center;"><input type="checkbox" value="" name="dcheck">I accept the Terms & Condions.</p> 
+          <p><input type="submit" value="SignUp"></p>
+          <p style="text-align: center;"><strong>Alerady have an account? <a href="login.html"><span> login </span></a><strong></p>
+        </form>
+
+       
+      </div>
+      </div>
+
+      <div class="footer">
+        <footer class="footer">
+          <p style="text-align: center;">Copyright &copy;2020</p>
+        </footer>
+        </div>
+
+        
+          <!-- Footer -->
+      <footer class="page-footer font-small blue">
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+
+
+        <!-- <script>
+            function submit(){
+
+                alert("good..you have successfully created a account.");
+
+        
+            }
+        </script> -->
+    
+</body>
+
+</html>
