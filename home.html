@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+      
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body, html {
+  
+  background-image: url("bg2.jpg");
+  width: 100%;
+ 
+ 
+ background-position: center center;
+ height: 100%;
+
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+
+
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+   
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+ 
+
+.login {
+  width: 450px;
+  height: 100%;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color:#02cc9f;
+}
+
+.login-header {
+  background:#02cc9f;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  /* text-transform: uppercase; */
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background:#02cc9f;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+.navbar-header{
+    color:#7BCC70;
+    display: inline-block;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#02cc9f;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+   position: absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#02cc9f;
+    
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+ 
+ .box{
+    
+    width: 419px;
+  height: 100%;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  color:#02cc9f;
+  
+ }
+ .box a:hover{
+     color:blue;
+ }
+
+ .box button{
+    background:#02cc9f;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  border-radius: 40%;
+  padding: 20px;
+  
+  
+ 
+ 
+ }
+
+ .card{
+    background-color:gainsboro;
+    background-image: url("sitelogo.png");
+
+    border-color: #02cc9f;
+    box-sizing: border-box;
+    height: 420px;
+ }
+
+ .avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.page-footer{
+      
+      overflow: hidden;
+      position:absolute;
+      
+      right:0;
+      left:0;
+      bottom:0;
+     
+    background-color: #02cc9f;
+  }
+ 
+
+ 
+    </style> 
+</head>
+<body>
+    
+    <div header>
+     <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+      </div>
+      </div>
+      <div class="bg">
+      
+
+    <div class="login">
+        <div class="login-triangle"></div>
+        
+        <h2 class="login-header">Wellcome to Dhasboard</h2>
+      
+        
+<!-- 
+          <div class="box">
+          <button><a href="login.html">Sign In as Doctor</a></button><br><br><br>
+          <button><a href="rlogin.html">Sign In as Receptionist</a></button>
+          </div> -->
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              <!-- <img src="sitelogo.png" alt="Avatar" class="avatar"> -->
+              <p class="card-text"></p>
+              
+              <a href="login.html" class="btn btn-info" role="button" style="background-color: #02cc9f; margin: 15px;">Sign In as Doctor</a>
+              <a href="rlogin.html" class="btn btn-info" role="button" style="background-color: #02cc9f; "> Sign In as Receptionist</a>
+            </div>
+          </div>
+        </div>
+      
+
+    
+       
+    </div>
+
+
+
+    
+
+      
+
+    </div>
+    
+      <!-- <div class="footer">
+      <footer class="footer">
+        <p style="text-align: center;">Copyright &copy;2020</p>
+      </footer>
+      </div> -->
+        <!-- Footer -->
+        <footer class="page-footer font-small blue">
+      
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            
+          </div>
+          <!-- Copyright -->
+        
+        </footer>
+        <!-- Footer -->
+      
+
+    
+</body>
+</html>
